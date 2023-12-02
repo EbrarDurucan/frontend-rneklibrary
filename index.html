@@ -12,15 +12,15 @@
     <script type="text/javascript">
         var Tawk_API = Tawk_API || {};
         var Tawk_LoadStart = new Date();
-        (function(){
-          var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-          s1.async=true;
-          s1.src='https://embed.tawk.to/5de3c6c8121048282ec42063f656ea0e02585e2c/default';
-          s1.charset='UTF-8';
-          s1.setAttribute('crossorigin','*');
-          s0.parentNode.insertBefore(s1,s0);
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/5de3c6c8121048282ec42063f656ea0e02585e2c/default';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
         })();
-      </script>
+    </script>
     <title>Library</title>
 </head>
 
@@ -48,6 +48,8 @@
                         </a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#myLibrary">
+                            <i class="fas fa-bookmark"></i> My Library
                         </a>
                     </li>
                     <li class="nav-item">
@@ -56,42 +58,45 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" on >
+                        <a class="nav-link" href="#" on>
                             <i class="fas fa-sign-in-alt"></i> Login
                         </a>
                     </li>
-                    
+
                     <li class="nav-item" style="position: relative;">
-                        <a class="nav-link" id="off" href="#üst" >
-                            <i class="fa-solid fa-cart-shopping" ></i> Shopping
-                            <span id="ali" style="position: absolute; top: 0px;" >0</span>
+                        <a class="nav-link" id="off" href="#üst">
+                            <i class="fa-solid fa-cart-shopping"></i> Shopping
+                            <span id="ali" style="position: absolute; top: 0px;">0</span>
                         </a>
                     </li>
-                   
-                    
+
+
                 </ul>
-                
+
             </div>
         </div>
     </nav>
     <div id="üst">
-        <div id="sepet" style="min-height: 300px;position: relative;top: 100px; display: none; background-color: white;z-index: 2;" >
+        <div id="sepet"
+            style="min-height: 300px;position: relative;top: 100px; display: none; background-color: white;z-index: 2;">
             <span class="kapat" id="kapama">X</span>
             <h3>Sepetimdekiler</h3>
-            
+
         </div>
-        <div id="onnay" style="z-index: 10; margin-top: 160px;display: none;"  >
+        <div id="onnay" style="z-index: 10; margin-top: 160px;display: none;">
             <p id="fiyat" style="font-size: larger;"> </p>
-            <button style="z-index: 10; background-color: red; padding: 30px; background-color: green;width: 100%;margin-top: 15px;" onclick="fiyatHesapla()">Siparişi Tamamla</button>
-            
+            <button
+                style="z-index: 10; background-color: red; padding: 30px; background-color: green;width: 100%;margin-top: 15px;"
+                onclick="fiyatHesapla()">Siparişi Tamamla</button>
+
         </div>
-            
-        </div>
+
     </div>
-    
-    
-       
-        
+    </div>
+
+
+
+
     <!--NAVBAR BİTİŞ-->
     <!--ANASAYFA-->
     <!-- Hero Section -->
@@ -99,145 +104,146 @@
         <section class="min-vh-100 d-flex flex-column justify-content-end align-items-center" id="hero-section"
             style="background-image: url(images/kütüp.jpg); background-size: cover;">
             <div class="text-center mt-3">
-                <h6 class="fw-bold display-5 text-capitalize mb-3 mt-4" style="color: rgb(12,6,15);">Discovery in the Digital World: <br> The Online Library Is Waiting for You!</h6>
+                <h6 class="fw-bold display-5 text-capitalize mb-3 mt-4" style="color: rgb(12,6,15);">Discovery in the
+                    Digital World: <br> The Online Library Is Waiting for You!</h6>
             </div>
-            <button id="butt" >bas</button>
         </section>
     </section>
-    
 
-        <!-- Sale Section -->
-        <section id="sale-section" class="text-center py-3">
-            <div class="container discount-banner">
-                <div class="row">
-                    <div class="col-md-12">
-                        <i class="fas fa-tags discount-icon"></i>
-                        <span class="font-weight-bold"> Today Only! </span>Rent with 20% Discount and Don't Miss the Opportunity!
-                    </div>
+
+    <!-- Sale Section -->
+    <section id="sale-section" class="text-center py-3">
+        <div class="container discount-banner">
+            <div class="row">
+                <div class="col-md-12">
+                    <i class="fas fa-tags discount-icon"></i>
+                    <span class="font-weight-bold"> Today Only! </span>Rent with 20% Discount and Don't Miss the
+                    Opportunity!
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Carousel Section -->
-        <div id="book-carousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="books d-flex flex-wrap justify-content-around">
-                        <!-- The Brothers Karamazov -->
-                        <div class="book">
-                            <img src="images/kramozov.jpg" alt="The Brothers Karamazov" class="img-fluid">
-                            <div class="book__title">The Brothers Karamazov</div>
-                            <div class="book__ratings">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                            <div class="book__price">
-                                <span class="book__price--normal">$59.95</span> $14.95
-                            </div>
+    <!-- Carousel Section -->
+    <div id="book-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="books d-flex flex-wrap justify-content-around">
+                    <!-- The Brothers Karamazov -->
+                    <div class="book">
+                        <img src="images/kramozov.jpg" alt="The Brothers Karamazov" class="img-fluid">
+                        <div class="book__title">The Brothers Karamazov</div>
+                        <div class="book__ratings">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
                         </div>
-                        <!-- Crime and Punishment -->
-                        <div class="book">
-                            <img src="images/crime.jpg" alt="Crime and Punishment" class="img-fluid">
-                            <div class="book__title">Crime and Punishment</div>
-                            <div class="book__ratings">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                            <div class="book__price">
-                                <span class="book__price--normal">$59.95</span> $14.95
-                            </div>
+                        <div class="book__price">
+                            <span class="book__price--normal">$59.95</span> $14.95
                         </div>
-
-                        <!-- Notes from Underground -->
-                        <div class="book">
-                            <img src="images/notes.jpg" alt="Notes from Underground" class="img-fluid">
-                            <div class="book__title">Notes from Underground</div>
-                            <div class="book__ratings">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                            <div class="book__price">
-                                <span class="book__price--normal">$59.95</span> $14.95
-                            </div>
-                        </div>
-
-                        <!-- The Idiot -->
-                        <div class="book">
-                            <img src="images/the-idiot-62.jpg" alt="The Idiot" class="img-fluid">
-                            <div class="book__title">The Idiot</div>
-                            <div class="book__ratings">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                            <div class="book__price">
-                                <span class="book__price--normal">$59.95</span> $14.95
-                            </div>
-                        </div>
-
-                        <!-- Demons -->
-                        <div class="book">
-                            <img src="images/demonds.jpg" alt="Demons" class="img-fluid">
-                            <div class="book__title">Demons</div>
-                            <div class="book__ratings">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                            <div class="book__price">
-                                <span class="book__price--normal">$59.95</span> $14.95
-                            </div>
-                        </div>
-
-                        <!-- The Gambler -->
-                        <div class="book">
-                            <img src="images/gam.jpg" alt="The Gambler" class="img-fluid">
-                            <div class="book__title">The Gambler</div>
-                            <div class="book__ratings">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                            <div class="book__price">
-                                <span class="book__price--normal">$59.95</span> $14.95
-                            </div>
-                        </div>
-
-                        <!-- The Adolescent -->
-                        <div class="book">
-                            <img src="images/ad.jpg" alt="The Adolescent" class="img-fluid">
-                            <div class="book__title">The Adolescent</div>
-                            <div class="book__ratings">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                            <div class="book__price">
-                                <span class="book__price--normal">$59.95</span> $14.95
-                            </div>
-                        </div>
-
-
                     </div>
+                    <!-- Crime and Punishment -->
+                    <div class="book">
+                        <img src="images/crime.jpg" alt="Crime and Punishment" class="img-fluid">
+                        <div class="book__title">Crime and Punishment</div>
+                        <div class="book__ratings">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="book__price">
+                            <span class="book__price--normal">$59.95</span> $14.95
+                        </div>
+                    </div>
+
+                    <!-- Notes from Underground -->
+                    <div class="book">
+                        <img src="images/notes.jpg" alt="Notes from Underground" class="img-fluid">
+                        <div class="book__title">Notes from Underground</div>
+                        <div class="book__ratings">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="book__price">
+                            <span class="book__price--normal">$59.95</span> $14.95
+                        </div>
+                    </div>
+
+                    <!-- The Idiot -->
+                    <div class="book">
+                        <img src="images/the-idiot-62.jpg" alt="The Idiot" class="img-fluid">
+                        <div class="book__title">The Idiot</div>
+                        <div class="book__ratings">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="book__price">
+                            <span class="book__price--normal">$59.95</span> $14.95
+                        </div>
+                    </div>
+
+                    <!-- Demons -->
+                    <div class="book">
+                        <img src="images/demonds.jpg" alt="Demons" class="img-fluid">
+                        <div class="book__title">Demons</div>
+                        <div class="book__ratings">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="book__price">
+                            <span class="book__price--normal">$59.95</span> $14.95
+                        </div>
+                    </div>
+
+                    <!-- The Gambler -->
+                    <div class="book">
+                        <img src="images/gam.jpg" alt="The Gambler" class="img-fluid">
+                        <div class="book__title">The Gambler</div>
+                        <div class="book__ratings">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="book__price">
+                            <span class="book__price--normal">$59.95</span> $14.95
+                        </div>
+                    </div>
+
+                    <!-- The Adolescent -->
+                    <div class="book">
+                        <img src="images/ad.jpg" alt="The Adolescent" class="img-fluid">
+                        <div class="book__title">The Adolescent</div>
+                        <div class="book__ratings">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="book__price">
+                            <span class="book__price--normal">$59.95</span> $14.95
+                        </div>
+                    </div>
+
+
                 </div>
-           
+            </div>
+
 
             <!-- Sağa ve sola kaydırma butonları -->
             <button class="carousel-control-prev" type="button" data-bs-target="#book-carousel" data-bs-slide="prev">
@@ -248,248 +254,285 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
-            
+
 
         </div>
-    </section>
-    <!--ANASAYFA BİTİŞ-->
+        </section>
+        <!--ANASAYFA BİTİŞ-->
 
-    <!--LIBRARY SECTION-->
-    <section id="library" class="bg-dark py-5 min-vh-100">
-        <div class="container">
-            <div class="text-white text-center py-5">
-                <h2 class="fw-bolder text-uppercase">LIBRARY</h2>
-            </div>
-            <div class="row" id="library">
-                <input type="text" id="searchInput" class="form-control" placeholder="Kitap veya yazar adı girin...">
-                <!-- Kitap listesi bölgesi -->
-                <div id="bookList" class="py-3">
-                    <!-- Kitap kartları -->
-                    <!-- Her bir kitap kartı, kitap bilgilerini ve "Ödünç Al" düğmesini içerir -->
-                    <div class="bookCard" data-name="Suç ve Ceza" data-author="Fyodor Dostoyevski"
-                        data-publication-date="1866" data-category="bilim">
-                        <img src="images/crime.jpg" alt="Kitap Resmi" class="img-responsive">
-                        <div class="bookDetails">
-                            <h3>Suç ve Ceza</h3>
-                            <p>Yazar: Fyodor Dostoyevski</p>
-                            <p>Yayın Tarihi: 1866</p>
-                            <button class="odunc" id="suc"  ">Ödünç Al</button>
-                        </div>
-                    </div>
-
-                    <div class="bookCard" data-name="Karamazov Kardeşler" data-author="Fyodor Dostoyevski"
-                        data-publication-date="1880" data-category="bilim">
-                        <img src="images/kramozov.jpg" alt="Kitap Resmi" class="img-responsive">
-                        <div class="bookDetails">
-                            <h3>Karamazov Kardeşler</h3>
-                            <p>Yazar: Fyodor Dostoyevski</p>
-                            <p>Yayın Tarihi: 1880</p>
-                            <button class="odunc" id="karam" ">Ödünç Al</button>
-                        </div>
-                    </div>
-
-                    <div class="bookCard" data-name="Sefiller" data-author="Victor Hugo" data-publication-date="1862">
-                        <img src="images/sefil.jpg" alt="Kitap Resmi" class="img-responsive">
-                        <div class="bookDetails">
-                            <h3>Sefiller</h3>
-                            <p>Yazar: Victor Hugo</p>
-                            <p>Yayın Tarihi: 1862</p>
-                            <button class="odunc" id="Sefil">Ödünç Al</button>
-                        </div>
-                    </div>
-
-                    <div class="bookCard" data-name="Madame Bovary" data-author="Gustave Flaubert"
-                        data-publication-date="1857" data-category="bilim">
-                        <img src="images/madame.jpg" alt="Kitap Resmi" class="img-responsive">
-                        <div class="bookDetails">
-                            <h3>Madame Bovary</h3>
-                            <p>Yazar: Gustave Flaubert</p>
-                            <p>Yayın Tarihi: 1857</p>
-                            <button class="odunc" id="Madam">Ödünç Al</button>
-                        </div>
-                    </div>
-
-                    <div class="bookCard" data-name="Anna Karenina" data-author="Leo Tolstoy"
-                        data-publication-date="1877" data-category="korku">
-                        <img src="images/anna.jpg" alt="Kitap Resmi" class="img-responsive">
-                        <div class="bookDetails">
-                            <h3>Anna Karenina</h3>
-                            <p>Yazar: Leo Tolstoy</p>
-                            <p>Yayın Tarihi: 1877</p>
-                            <button class="odunc" id="Anna">Ödünç Al</button>
-                        </div>
-                    </div>
-                    <div class="bookCard" data-name="Satranç" data-author="Stefan Zweig" data-publication-date="1942"
-                        data-category="Roman">
-                        <img src="images/satranc.jpg" alt="Satranç Kitabı" class="img-responsive">
-                        <div class="bookDetails">
-                            <h3>Satranç</h3>
-                            <p>Yazar: Stefan Zweig</p>
-                            <p>Yayın Tarihi: 1942</p>
-                            <button id="Satranc" class="odunc">Ödünç Al</button>
-                        </div>
-                    </div>
-                    <!-- 1984 Kitabı -->
-                    <div class="bookCard" data-name="1984" data-author="George Orwell" data-publication-date="1949"
-                        data-category="Distopya">
-                        <img src="images/1984.jpg" alt="1984 Kitabı" class="img-responsive">
-                        <div class="bookDetails">
-                            <h3>1984</h3>
-                            <p>Yazar: George Orwell</p>
-                            <p>Yayın Tarihi: 1949</p>
-                            <button class="odunc" id="1984" >Ödünç Al</button>
-                        </div>
-                    </div>
-
-                    <!-- Hayvan Çiftliği Kitabı -->
-                    <div class="bookCard" data-name="Hayvan Çiftliği" data-author="George Orwell"
-                        data-publication-date="1945" data-category="Allegori">
-                        <img src="images/hayvan-ciftligi.jpg" alt="Hayvan Çiftliği Kitabı" class="img-responsive">
-                        <div class="bookDetails">
-                            <h3>Hayvan Çiftliği</h3>
-                            <p>Yazar: George Orwell</p>
-                            <p>Yayın Tarihi: 1945</p>
-                            <button class="odunc" id="hayvan">Ödünç Al</button>
-                        </div>
-                    </div>
-                    <!-- Baskerville Köpekleri Kitabı -->
-                    <div class="bookCard" data-name="Baskerville Köpekleri" data-author="Arthur Conan Doyle"
-                        data-publication-date="1902" data-category="Polisiye">
-                        <img src="images/baskerville.jpg" alt="Baskerville Köpekleri Kitabı" class="img-responsive">
-                        <div class="bookDetails">
-                            <h3>Baskerville Köpekleri</h3>
-                            <p>Yazar: Arthur Conan Doyle</p>
-                            <p>Yayın Tarihi: 1902</p>
-                            <button class="odunc" id="basker">Ödünç
-                                Al</button>
-                        </div>
-                    </div>
-                    <!-- Beyaz Diş Kitabı -->
-                    <div class="bookCard" data-name="Beyaz Diş" data-author="Jack London" data-publication-date="1906"
-                        data-category="Macera">
-                        <img src="images/beyaz-dis.jpg" alt="Beyaz Diş Kitabı" class="img-responsive">
-                        <div class="bookDetails">
-                            <h3>Beyaz Diş</h3>
-                            <p>Yazar: Jack London</p>
-                            <p>Yayın Tarihi: 1906</p>
-                            <button class="odunc" id="beyaz" >Ödünç Al</button>
-                        </div>
-                    </div>
-
-
-                    <!-- Diğer kitap kartları buraya eklenecek -->
+        <!--LIBRARY SECTION-->
+        <section id="library" class="bg-dark py-5 min-vh-100">
+            <div class="container">
+                <div class="text-white text-center py-5">
+                    <h2 class="fw-bolder text-uppercase">LIBRARY</h2>
                 </div>
-                <!-- Sepet bölgesi -->
-                <div id="myLibrary"></div>
-            </div>
-        </div>
-    </section>
+                <div class="row" id="library">
+                    <input type="text" id="searchInput" class="form-control"
+                        placeholder="Kitap veya yazar adı girin...">
+                    <!-- Kitap listesi bölgesi -->
+                    <div id="bookList" class="py-3">
+                        <!-- Kitap kartları -->
+                        <!-- Her bir kitap kartı, kitap bilgilerini ve "Ödünç Al" düğmesini içerir -->
+                        <div class="bookCard" data-name="Suç ve Ceza" data-author="Fyodor Dostoyevski"
+                            data-publication-date="1866" data-category="bilim">
+                            <img src="images/crime.jpg" alt="Kitap Resmi" class="img-responsive">
+                            <div class="bookDetails">
+                                <h3>Suç ve Ceza</h3>
+                                <p>Yazar: Fyodor Dostoyevski</p>
+                                <p>Yayın Tarihi: 1866</p>
+                                <button class="odunc" id="suc">Ödünç Al</button>
+                            </div>
+                        </div>
+
+                        <div class="bookCard" data-name="Karamazov Kardeşler" data-author="Fyodor Dostoyevski"
+                            data-publication-date="1880" data-category="bilim">
+                            <img src="images/kramozov.jpg" alt="Kitap Resmi" class="img-responsive">
+                            <div class="bookDetails">
+                                <h3>Karamazov Kardeşler</h3>
+                                <p>Yazar: Fyodor Dostoyevski</p>
+                                <p>Yayın Tarihi: 1880</p>
+                                <button class="odunc" id="karam">Ödünç Al</button>
+                            </div>
+                        </div>
+
+                        <div class="bookCard" data-name="Sefiller" data-author="Victor Hugo"
+                            data-publication-date="1862">
+                            <img src="images/sefil.jpg" alt="Kitap Resmi" class="img-responsive">
+                            <div class="bookDetails">
+                                <h3>Sefiller</h3>
+                                <p>Yazar: Victor Hugo</p>
+                                <p>Yayın Tarihi: 1862</p>
+                                <button class="odunc" id="Sefil">Ödünç Al</button>
+                            </div>
+                        </div>
+
+                        <div class="bookCard" data-name="Madame Bovary" data-author="Gustave Flaubert"
+                            data-publication-date="1857" data-category="bilim">
+                            <img src="images/madame.jpg" alt="Kitap Resmi" class="img-responsive">
+                            <div class="bookDetails">
+                                <h3>Madame Bovary</h3>
+                                <p>Yazar: Gustave Flaubert</p>
+                                <p>Yayın Tarihi: 1857</p>
+                                <button class="odunc" id="Madam">Ödünç Al</button>
+                            </div>
+                        </div>
+
+                        <div class="bookCard" data-name="Anna Karenina" data-author="Leo Tolstoy"
+                            data-publication-date="1877" data-category="korku">
+                            <img src="images/anna.jpg" alt="Kitap Resmi" class="img-responsive">
+                            <div class="bookDetails">
+                                <h3>Anna Karenina</h3>
+                                <p>Yazar: Leo Tolstoy</p>
+                                <p>Yayın Tarihi: 1877</p>
+                                <button class="odunc" id="Anna">Ödünç Al</button>
+                            </div>
+                        </div>
+                        <div class="bookCard" data-name="Satranç" data-author="Stefan Zweig"
+                            data-publication-date="1942" data-category="Roman">
+                            <img src="images/satranc.jpg" alt="Satranç Kitabı" class="img-responsive">
+                            <div class="bookDetails">
+                                <h3>Satranç</h3>
+                                <p>Yazar: Stefan Zweig</p>
+                                <p>Yayın Tarihi: 1942</p>
+                                <button id="Satranc" class="odunc">Ödünç Al</button>
+                            </div>
+                        </div>
+                        <!-- 1984 Kitabı -->
+                        <div class="bookCard" data-name="1984" data-author="George Orwell" data-publication-date="1949"
+                            data-category="Distopya">
+                            <img src="images/1984.jpg" alt="1984 Kitabı" class="img-responsive">
+                            <div class="bookDetails">
+                                <h3>1984</h3>
+                                <p>Yazar: George Orwell</p>
+                                <p>Yayın Tarihi: 1949</p>
+                                <button class="odunc" id="1984">Ödünç Al</button>
+                            </div>
+                        </div>
+
+                        <!-- Hayvan Çiftliği Kitabı -->
+                        <div class="bookCard" data-name="Hayvan Çiftliği" data-author="George Orwell"
+                            data-publication-date="1945" data-category="Allegori">
+                            <img src="images/hayvan-ciftligi.jpg" alt="Hayvan Çiftliği Kitabı" class="img-responsive">
+                            <div class="bookDetails">
+                                <h3>Hayvan Çiftliği</h3>
+                                <p>Yazar: George Orwell</p>
+                                <p>Yayın Tarihi: 1945</p>
+                                <button class="odunc" id="hayvan">Ödünç Al</button>
+                            </div>
+                        </div>
+                        <!-- Baskerville Köpekleri Kitabı -->
+                        <div class="bookCard" data-name="Baskerville Köpekleri" data-author="Arthur Conan Doyle"
+                            data-publication-date="1902" data-category="Polisiye">
+                            <img src="images/baskerville.jpg" alt="Baskerville Köpekleri Kitabı" class="img-responsive">
+                            <div class="bookDetails">
+                                <h3>Baskerville Köpekleri</h3>
+                                <p>Yazar: Arthur Conan Doyle</p>
+                                <p>Yayın Tarihi: 1902</p>
+                                <button class="odunc" id="basker">Ödünç
+                                    Al</button>
+                            </div>
+                        </div>
+                        <!-- Beyaz Diş Kitabı -->
+                        <div class="bookCard" data-name="Beyaz Diş" data-author="Jack London"
+                            data-publication-date="1906" data-category="Macera">
+                            <img src="images/beyaz-dis.jpg" alt="Beyaz Diş Kitabı" class="img-responsive">
+                            <div class="bookDetails">
+                                <h3>Beyaz Diş</h3>
+                                <p>Yazar: Jack London</p>
+                                <p>Yayın Tarihi: 1906</p>
+                                <button class="odunc" id="beyaz">Ödünç Al</button>
+                            </div>
+                        </div>
 
 
-    <!--LIBRARY BİTİŞ-->
-    <!--MYLIBRARY-->
-    <section id="myLibrary" class="min-vh-100  py-5">
-        <div class="container">
-            <div class="text-center mt-4 py-4">
-                <h2 class="fw-bolder text-uppercase">My Library</h2>
-            </div>
-        </div>
-
-    </section>
-    <!--MYLIBRARY BİTİŞ-->
-    <!--İLETİŞİM -->
-    <section class="bg-dark py-5" id="content">
-        <div class="container">
-            <div class="text-white text-center py-3">
-                <h2 class="fw-bolder text-uppercase">Contact</h2>
-            </div>
-            <div class="col-xxl-6 col-xl-7 col-lg-8 col-md-9 col-sm-10 mx-auto">
-                <form class="text-white">
-                    <div class="mb-3 mt-1">
-                        <label class="form-label">Name Surname</label>
-                        <input type="text" class="form-control" required>
+                        <!-- Diğer kitap kartları buraya eklenecek -->
                     </div>
-                    <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1"
-                            placeholder="name@example.com">
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label">Subject</label>
-                        <input type="text" class="form-control">
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
-                    </div>
-                    <input class="btn btn-primary" type="submit" value="Submit">
-                </form>
-            </div>
-        </div>
-    </section>
-    <!--İLETİŞİM BİTİŞ-->
-  <!-- The Modal -->
-<div id="loginModal" class="modal">
-    <!-- Modal content -->
-    <div class="modal-content">
-        <span class="close" onclick="closeLoginForm()">&times;</span>
-        <div class="login-form">
-            <h2><i class="fas fa-user-circle"></i> Login</h2>            <form id="loginForm">
-                <div class="mb-3">
-                    <label for="username">Username:</label>
-                    <input type="text" id="username" name="username" required>
+                    <!-- Sepet bölgesi -->
+                    <div id="myLibrary"></div>
                 </div>
-
-                <div class="mb-3">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-
-                <div class="mb-3">
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" name="password" required>
-                </div>
-
-                <button type="button" onclick="checkPassword()">Login</button>
-            </form>
-        </div>
-    </div>
-</div>
-<!-- The Modal bitiş -->
-    <!--FOOTER-->
-    <footer>
-        <div class="container">
-          <div class="row row__column">
-        
-            <div class="footer__list text-center">
-              <a href="#home" class="footer__link">Home</a>
-              <a href="#library" class="footer__link no-cursor">Library</a>
-              <a href="#myLibrary" class="footer__link">My Library</a>
-              <a href="#contact" class="footer__link no-cursor">Contact</a>
             </div>
-            <div class="footer__copyright text-center">Web Sitem &copy; 2023. Tüm hakları saklıdır.</div>
-          </div>
+        </section>
+
+
+        <!--LIBRARY BİTİŞ-->
+        <!--MYLIBRARY-->
+        <section id="myLibrary" class="min-vh-100  py-5">
+            <div class="container">
+                <div class="text-center mt-4 py-4">
+                    <h2 class="fw-bolder text-uppercase">My Library</h2>
+                </div>
+            </div>
+
+        </section>
+        <!--MYLIBRARY BİTİŞ-->
+        <!--İLETİŞİM -->
+        <section class="bg-dark py-5" id="content">
+            <div class="container">
+                <div class="text-white text-center py-3">
+                    <h2 class="fw-bolder text-uppercase">Contact</h2>
+                </div>
+                <div class="col-xxl-6 col-xl-7 col-lg-8 col-md-9 col-sm-10 mx-auto">
+                    <form class="text-white">
+                        <div class="mb-3 mt-1">
+                            <label class="form-label">Name Surname</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="name@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Subject</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
+                        </div>
+                        <input class="btn btn-primary" type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!--İLETİŞİM BİTİŞ-->
+        <!-- The Modal -->
+        <div id="loginModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close" onclick="closeLoginForm()">&times;</span>
+                <div class="login-form">
+                    <h2><i class="fas fa-user-circle"></i> Login</h2>
+                    <form id="loginForm">
+                        <div class="mb-3">
+                            <label for="username">Username:</label>
+                            <input type="text" id="username" name="username" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+
+                        <button type="button" onclick="checkPassword()">Login</button>
+                    </form>
+                </div>
+            </div>
         </div>
-      </footer>
-    
-    <script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/656b027cbfb79148e59955ac/1hgl03e37';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
-    })();
-    </script>
-    <!--End of Tawk.to Script-->
-    <!--footer BİTİŞ-->
-    <script src="script.js"></script>
-   
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-beta2/js/bootstrap.min.js"></script>
+        <!-- The Modal bitiş -->
+        <!--FOOTER-->
+        <footer class="bg-dark text-white py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h4>Our Mission</h4>
+                        <p>At [Your Bookstore Name], our mission is to ignite the passion for reading and
+                            knowledge-sharing.Join us in our endeavor to spread the joy of reading and exploration through
+                            the diverse stories within our collection.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Quick Links</h4>
+                        <ul class="list-unstyled ">
+                            <li><a href="#home" class="text-white text-decoration-none">Home</a></li>
+                            <li><a href="#library" class="text-white text-decoration-none">Library</a></li>
+                            <li><a href="#myLibrary" class="text-white text-decoration-none">My Library</a></li>
+                            <li><a href="#content" class="text-white text-decoration-none">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Quick Contact</h4>
+                        <p><i class="fas fa-envelope"></i> Email: example@example.com<br>
+                            <i class="fas fa-phone"></i> Phone: +123456789<br>
+                            <i class="fas fa-map-marker-alt"></i> Address: 123 Street, City, Country
+                        </p>
+                    </div>
+                </div>
+                <hr class="my-4">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <ul id="socialmedia" class="list-inline">
+                            <li class="list-inline-item"><a href="#" class="text-white"><i
+                                        class="fab fa-facebook-f"></i></a></li>
+                            <li class="list-inline-item"><a href="#" class="text-white"><i
+                                        class="fab fa-twitter"></i></a></li>
+                            <li class="list-inline-item"><a href="#" class="text-white"><i
+                                        class="fab fa-instagram"></i></a></li>
+                            <li class="list-inline-item"><a href="#" class="text-white"><i
+                                        class="fab fa-linkedin-in"></i></a></li>
+                            <li class="list-inline-item"><a href="#" class="text-white"><i
+                                        class="fab fa-youtube"></i></a></li>
+                        </ul>
+                        <p class="mb-0">© 2023 YourWebsite.com</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <script type="text/javascript">
+            var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+            (function () {
+                var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+                s1.async = true;
+                s1.src = 'https://embed.tawk.to/656b027cbfb79148e59955ac/1hgl03e37';
+                s1.charset = 'UTF-8';
+                s1.setAttribute('crossorigin', '*');
+                s0.parentNode.insertBefore(s1, s0);
+            })();
+        </script>
+        <!--End of Tawk.to Script-->
+        <!--footer BİTİŞ-->
+        <script src="script.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-beta2/js/bootstrap.min.js"></script>
 </body>
+
 </html>
