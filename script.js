@@ -342,3 +342,40 @@ function cagır(){
     s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
     var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
 }
+document.addEventListener("DOMContentLoaded", function() {
+  const contactForm = document.getElementById('contactForm');
+  contactForm.addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      const nameSurname = document.getElementById('nameSurname').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const subject = document.getElementById('subject').value.trim();
+      const message = document.getElementById('message').value.trim();
+
+      const nameSurnamePattern = /^[A-Za-z\s]+$/;
+      const subjectPattern = /^[A-Za-z\s]+$/;
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+      if (!nameSurnamePattern.test(nameSurname)) {
+          alert("Please enter a valid Name Surname (Only alphabets and spaces are allowed)");
+          return false;
+      }
+
+      if (!subjectPattern.test(subject)) {
+          alert("Please enter a valid Subject (Only alphabets and spaces are allowed)");
+          return false;
+      }
+
+      if (!emailPattern.test(email)) {
+          alert("Please enter a valid Email address");
+          return false;
+      }
+
+      // Form gönderildiğinde buraya ulaşır
+      alert("Form submitted successfully!");
+      contactForm.reset(); // Formu sıfırlar
+      return true;
+  });
+});
+
+

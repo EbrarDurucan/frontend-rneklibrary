@@ -48,7 +48,8 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" >
+                        <a class="nav-link" href="#myLibrary">
+                            <i class="fas fa-bookmark"></i> My Library
                         </a>
                     </li>
                     <li class="nav-item">
@@ -57,14 +58,15 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index2.html">
-                            <i class="fas fa-sign-in-alt"></i> Login
+                        <a class="nav-link" href="index.html">
+                            <i class="fas fa-sign-out-alt"></i> Logout
                         </a>
-                    </li>                    
+                    </li>                                       
 
                     <li class="nav-item" style="position: relative;">
                         <a class="nav-link" id="off" href="#üst">
-                            <i class="fa-solid fa-cart-shopping"></i> Shopping                        
+                            <i class="fa-solid fa-cart-shopping"></i> Shopping
+                            <span id="ali" style="position: absolute; top: 0px;">0</span>
                         </a>
                     </li>
 
@@ -410,29 +412,29 @@
                     <h2 class="fw-bolder text-uppercase">Contact</h2>
                 </div>
                 <div class="col-xxl-6 col-xl-7 col-lg-8 col-md-9 col-sm-10 mx-auto">
-                    <form class="text-white">
+                    <form class="text-white" id="contactForm">
                         <div class="mb-3 mt-1">
                             <label class="form-label">Name Surname</label>
-                            <input type="text" class="form-control" required>
+                            <input type="text" class="form-control" id="nameSurname" required>
                         </div>
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1"
-                                placeholder="name@example.com">
+                            <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
                         </div>
                         <div class="mb-3">
                             <label class="form-label">Subject</label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" id="subject" required>
                         </div>
                         <div class="mb-3">
                             <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
+                            <textarea class="form-control" id="message" rows="8" required></textarea>
                         </div>
                         <input class="btn btn-primary" type="submit" value="Submit">
                     </form>
                 </div>
             </div>
         </section>
+        
         <!--İLETİŞİM BİTİŞ-->
         <!-- The Modal -->
         <div id="loginModal" class="modal">
