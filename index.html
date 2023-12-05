@@ -9,18 +9,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <script type="text/javascript">
-        var Tawk_API = Tawk_API || {};
-        var Tawk_LoadStart = new Date();
-        (function () {
-            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
-            s1.async = true;
-            s1.src = 'https://embed.tawk.to/5de3c6c8121048282ec42063f656ea0e02585e2c/default';
-            s1.charset = 'UTF-8';
-            s1.setAttribute('crossorigin', '*');
-            s0.parentNode.insertBefore(s1, s0);
-        })();
-    </script>
     <title>Library</title>
 </head>
 
@@ -47,24 +35,21 @@
                             <i class="fas fa-book-open"></i> Library
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" >
-                        </a>
-                    </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="#content">
                             <i class="fas fa-envelope"></i> Contact
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index2.html">
+                        <a class="nav-link" href="login.html" target="_self">
                             <i class="fas fa-sign-in-alt"></i> Login
                         </a>
-                    </li>                    
+                    </li>
 
                     <li class="nav-item" style="position: relative;">
                         <a class="nav-link" id="off" href="#üst">
-                            <i class="fa-solid fa-cart-shopping"></i> Shopping                        
+                            <i class="fa-solid fa-cart-shopping"></i> Shopping
                         </a>
                     </li>
 
@@ -74,27 +59,6 @@
             </div>
         </div>
     </nav>
-    <div id="üst">
-        <div id="sepet"
-            style="min-height: 300px;position: relative;top: 100px; display: none; background-color: white;z-index: 2;">
-            <span class="kapat" id="kapama">X</span>
-            <h3>Sepetimdekiler</h3>
-
-        </div>
-        <div id="onnay" style="z-index: 10; margin-top: 160px;display: none;">
-            <p id="fiyat" style="font-size: larger;"> </p>
-            <button
-                style="z-index: 10; background-color: red; padding: 30px; background-color: green;width: 100%;margin-top: 15px;"
-                onclick="fiyatHesapla()">Siparişi Tamamla</button>
-
-        </div>
-
-    </div>
-    </div>
-
-
-
-
     <!--NAVBAR BİTİŞ-->
     <!--ANASAYFA-->
     <!-- Hero Section -->
@@ -278,7 +242,7 @@
                                 <h3>Suç ve Ceza</h3>
                                 <p>Yazar: Fyodor Dostoyevski</p>
                                 <p>Yayın Tarihi: 1866</p>
-                                <button class="odunc" id="suc">Ödünç Al</button>
+                                <button class="odunc" id="suc">Satın Al</button>
                             </div>
                         </div>
 
@@ -289,7 +253,7 @@
                                 <h3>Karamazov Kardeşler</h3>
                                 <p>Yazar: Fyodor Dostoyevski</p>
                                 <p>Yayın Tarihi: 1880</p>
-                                <button class="odunc" id="karam">Ödünç Al</button>
+                                <button class="odunc" id="karam">Satın Al</button>
                             </div>
                         </div>
 
@@ -300,7 +264,7 @@
                                 <h3>Sefiller</h3>
                                 <p>Yazar: Victor Hugo</p>
                                 <p>Yayın Tarihi: 1862</p>
-                                <button class="odunc" id="Sefil">Ödünç Al</button>
+                                <button class="odunc" id="Sefil">Satın Al</button>
                             </div>
                         </div>
 
@@ -311,7 +275,7 @@
                                 <h3>Madame Bovary</h3>
                                 <p>Yazar: Gustave Flaubert</p>
                                 <p>Yayın Tarihi: 1857</p>
-                                <button class="odunc" id="Madam">Ödünç Al</button>
+                                <button class="odunc" id="Madam">Satın Al</button>
                             </div>
                         </div>
 
@@ -322,7 +286,7 @@
                                 <h3>Anna Karenina</h3>
                                 <p>Yazar: Leo Tolstoy</p>
                                 <p>Yayın Tarihi: 1877</p>
-                                <button class="odunc" id="Anna">Ödünç Al</button>
+                                <button class="odunc" id="Anna">Satın Al</button>
                             </div>
                         </div>
                         <div class="bookCard" data-name="Satranç" data-author="Stefan Zweig"
@@ -332,7 +296,7 @@
                                 <h3>Satranç</h3>
                                 <p>Yazar: Stefan Zweig</p>
                                 <p>Yayın Tarihi: 1942</p>
-                                <button id="Satranc" class="odunc">Ödünç Al</button>
+                                <button id="Satranc" class="odunc">Satın Al</button>
                             </div>
                         </div>
                         <!-- 1984 Kitabı -->
@@ -343,7 +307,7 @@
                                 <h3>1984</h3>
                                 <p>Yazar: George Orwell</p>
                                 <p>Yayın Tarihi: 1949</p>
-                                <button class="odunc" id="1984">Ödünç Al</button>
+                                <button class="odunc" id="1984">Satın Al</button>
                             </div>
                         </div>
 
@@ -355,7 +319,7 @@
                                 <h3>Hayvan Çiftliği</h3>
                                 <p>Yazar: George Orwell</p>
                                 <p>Yayın Tarihi: 1945</p>
-                                <button class="odunc" id="hayvan">Ödünç Al</button>
+                                <button class="odunc" id="hayvan">Satın Al</button>
                             </div>
                         </div>
                         <!-- Baskerville Köpekleri Kitabı -->
@@ -366,8 +330,7 @@
                                 <h3>Baskerville Köpekleri</h3>
                                 <p>Yazar: Arthur Conan Doyle</p>
                                 <p>Yayın Tarihi: 1902</p>
-                                <button class="odunc" id="basker">Ödünç
-                                    Al</button>
+                                <button class="odunc" id="basker">Satın Al</button>
                             </div>
                         </div>
                         <!-- Beyaz Diş Kitabı -->
@@ -378,32 +341,21 @@
                                 <h3>Beyaz Diş</h3>
                                 <p>Yazar: Jack London</p>
                                 <p>Yayın Tarihi: 1906</p>
-                                <button class="odunc" id="beyaz">Ödünç Al</button>
+                                <button class="odunc" id="beyaz">Satın Al</button>
                             </div>
                         </div>
 
 
                         <!-- Diğer kitap kartları buraya eklenecek -->
                     </div>
-                    <!-- Sepet bölgesi -->
-                    <div id="myLibrary"></div>
+
                 </div>
-            </div>
         </section>
 
 
         <!--LIBRARY BİTİŞ-->
-        <!--MYLIBRARY-->
-        <section id="myLibrary" class="min-vh-100  py-5">
-            <div class="container">
-                <div class="text-center mt-4 py-4">
-                    <h2 class="fw-bolder text-uppercase">My Library</h2>
-                </div>
-            </div>
-
-        </section>
-        <!--MYLIBRARY BİTİŞ-->
         <!--İLETİŞİM -->
+
         <section class="bg-dark py-5" id="content">
             <div class="container">
                 <div class="text-white text-center py-3">
@@ -435,75 +387,57 @@
         </section>
         <!--İLETİŞİM BİTİŞ-->
         <!-- The Modal -->
-        <div id="loginModal" class="modal">
-            <!-- Modal content -->
-            <div class="modal-content">
-                <span class="close" onclick="closeLoginForm()">&times;</span>
-                <div class="login-form">
-                    <h2><i class="fas fa-user-circle"></i> Login</h2>
-                    <form id="loginForm">
-                        <div class="mb-3">
-                            <label for="username">Username:</label>
-                            <input type="text" id="username" name="username" required>
-                        </div>
 
-                        <div class="mb-3">
-                            <label for="email">Email:</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
 
-                        <div class="mb-3">
-                            <label for="password">Password:</label>
-                            <input type="password" id="password" name="password" required>
-                        </div>
-
-                        <button type="button" onclick="checkPassword()">Login</button>
-                    </form>
-                </div>
-            </div>
-        </div>
         <!-- The Modal bitiş -->
         <!--FOOTER-->
         <footer class="bg-dark text-white py-5">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-6">
                         <h4>Our Mission</h4>
                         <p>At [Your Bookstore Name], our mission is to ignite the passion for reading and
-                            knowledge-sharing.Join us in our endeavor to spread the joy of reading and exploration through
+                            knowledge-sharing.Join us in our endeavor to spread the joy of reading and exploration
+                            through
                             the diverse stories within our collection.</p>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-6">
                         <h4>Quick Links</h4>
                         <ul class="list-unstyled ">
                             <li><a href="#home" class="text-white text-decoration-none">Home</a></li>
                             <li><a href="#library" class="text-white text-decoration-none">Library</a></li>
-                            <li><a href="#myLibrary" class="text-white text-decoration-none">My Library</a></li>
                             <li><a href="#content" class="text-white text-decoration-none">Contact</a></li>
                         </ul>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-6 py-3 my-5">
                         <h4>Quick Contact</h4>
                         <p><i class="fas fa-envelope"></i> Email: example@example.com<br>
                             <i class="fas fa-phone"></i> Phone: +123456789<br>
-                            <i class="fas fa-map-marker-alt"></i> Address: 123 Street, City, Country
                         </p>
+
+                    </div>
+                    <div class="col-md-6 py-3">
+                            <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.01333635513!2d29.036247311759336!3d41.02496417122878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab7e4b9b96af1%3A0x78ef20ea9ab0de2a!2zw5xza8O8ZGFyIMOcbml2ZXJzaXRlc2kgTWVya2V6IFllcmxlxZ9rZQ!5e0!3m2!1str!2str!4v1701811407768!5m2!1str!2str"
+                            width="500" height="300" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
                     </div>
                 </div>
                 <hr class="my-4">
                 <div class="row">
                     <div class="col-md-12 text-center">
                         <ul id="socialmedia" class="list-inline">
+                            <li class="list-inline-item"><a href="#" class="text-white">
+                                    <i class="fab fa-facebook-f fs-4"></i></a></li>
+                            <li class="list-inline-item"><a href="#" class="text-white">
+                                    <i class="fab fa-twitter fs-4"></i></a></li>
                             <li class="list-inline-item"><a href="#" class="text-white"><i
-                                        class="fab fa-facebook-f"></i></a></li>
+                                        class="fab fa-instagram fs-4"></i></a></li>
                             <li class="list-inline-item"><a href="#" class="text-white"><i
-                                        class="fab fa-twitter"></i></a></li>
+                                        class="fab fa-linkedin-in fs-4"></i></a></li>
                             <li class="list-inline-item"><a href="#" class="text-white"><i
-                                        class="fab fa-instagram"></i></a></li>
-                            <li class="list-inline-item"><a href="#" class="text-white"><i
-                                        class="fab fa-linkedin-in"></i></a></li>
-                            <li class="list-inline-item"><a href="#" class="text-white"><i
-                                        class="fab fa-youtube"></i></a></li>
+                                        class="fab fa-youtube fs-4"></i></a></li>
                         </ul>
                         <p class="mb-0">© 2023 YourWebsite.com</p>
                     </div>
@@ -512,21 +446,7 @@
         </footer>
 
 
-        <script type="text/javascript">
-            var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-            (function () {
-                var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
-                s1.async = true;
-                s1.src = 'https://embed.tawk.to/656b027cbfb79148e59955ac/1hgl03e37';
-                s1.charset = 'UTF-8';
-                s1.setAttribute('crossorigin', '*');
-                s0.parentNode.insertBefore(s1, s0);
-            })();
-        </script>
-        <!--End of Tawk.to Script-->
         <!--footer BİTİŞ-->
-        <script src="script.js"></script>
-
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
